@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://www.gstatic.com/firebasejs/7.17.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
+
+    <link rel="stylesheet" href="./register-login.css" />
+    <title>Register | Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="branding">Welcome</div>
+        <nav>
+          <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./register-login.html">Register</a></li>
+            <li><a href="./about.html">About</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="register">
+        <h1>Register</h1>
+        <form id="registerForm">
+          <div class="group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter Name" />
+          </div>
+          <div class="group">
+            <label for="email1">Email</label>
+            <input
+              type="email"
+              name="email1"
+              id="email1"
+              placeholder="Enter Email"
+            />
+          </div>
+          <div class="group">
+            <label for="password1">Password</label>
+            <input
+              type="password"
+              name="password1"
+              id="password1"
+              placeholder="Enter Password"
+            />
+          </div>
+          <div class="group">
+            <label for="Comfirm password">Comfirm Password</label>
+            <input
+              type="password"
+              name="comfirm password"
+              id="comfirm password"
+              placeholder="Comfirm Password"
+            />
+          </div>
+          <input type="submit" class="register_button" value="Register" />
+        </form>
+      </div>
+      <div class="login">
+        <h1>Login</h1>
+        <form id="loginForm">
+          <div class="group">
+            <label for="email2">Email</label>
+            <input
+              type="email"
+              name="email2"
+              id="email2"
+              placeholder="Enter Email"
+            />
+          </div>
+          <div class="group">
+            <label for="password2">Password</label>
+            <input
+              type="password"
+              name="password2"
+              id="password2"
+              placeholder="Enter Password"
+            />
+          </div>
+          <input type="submit" class="login_button" value="login" />
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/firebase.js"></script>
+  </body>
+</html>
